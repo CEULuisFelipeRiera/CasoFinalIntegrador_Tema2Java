@@ -1,4 +1,3 @@
-package Animales;
 
 public class animal_terrestres extends animal{
     boolean patas;

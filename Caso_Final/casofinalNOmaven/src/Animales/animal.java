@@ -26,7 +26,7 @@ public class animal {
         this.seAlimenta = seAlimenta;
     }
 
-    public void buenaSalud(esSaludable){
+    public void buenaSalud(boolean esSaludable){
         if(esSaludable){
             System.out.println("es saludable");
         }else{
@@ -34,7 +34,7 @@ public class animal {
         }
     }
 
-    public void buenComportamiento(seComporta){
+    public void buenComportamiento(boolean seComporta){
         if(seComporta){
             System.out.println("se comporta");
         }else{
@@ -42,16 +42,13 @@ public class animal {
         }
     }
 
-    public void buenaAlimentacion(seAlimenta){
+    public void buenaAlimentacion(boolean seAlimenta){
         if(seAlimenta){
             System.out.println("se alimenta bien");
         }else{
             System.out.println("no se alimenta bien");
         }
     }
-
-    public void 
-
 
     public boolean isEsSaludable() {
         return esSaludable;
@@ -129,10 +126,6 @@ public class animal {
         return id;
     }
 
-    public String setId(){
-        this.id = id;
-    }
-    
     @Override
     public String toString() {
         return "animales []";
