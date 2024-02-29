@@ -1,9 +1,13 @@
 package Gestion_Habitat;
 
 public class aviario {
-    // Constructor
-    public aviario() {
-        super();
+
+    boolean puedenVolar;
+
+    public aviario(int temperatura, int humedad, boolean limpieza, boolean puedeVolar) {
+        super(temperatura, humedad, limpieza);
+        this.puedenVolar = puedenVolar;
+        //TODO Auto-generated constructor stub
     }
 
     // Super method

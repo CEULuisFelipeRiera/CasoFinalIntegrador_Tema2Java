@@ -6,9 +6,20 @@ package Gestion_Habitat;
  */
 public class acuaticos extends habitat {
 
-    public acuaticos(int temperatura, int humedad, boolean limpieza) {
+    boolean puedenadar;
+
+    public acuaticos(int temperatura, int humedad, boolean limpieza, boolean puedenadar) {
         super(temperatura, humedad, limpieza);
+        this.puedenadar = puedenadar;
         //TODO Auto-generated constructor stub
+    }
+
+    public boolean isPuedenadar() {
+        return puedenadar;
+    }
+
+    public void setPuedenadar(boolean puedenadar) {
+        this.puedenadar = puedenadar;
     }
 
     @Override

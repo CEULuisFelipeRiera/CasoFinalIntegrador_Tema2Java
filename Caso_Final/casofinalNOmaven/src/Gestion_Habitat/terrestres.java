@@ -4,8 +4,22 @@ import Gestion_Habitat.habitat;
 
 public class terrestres extends habitat {
 
-    public terrestres() {
-        super();
+    boolean puedeCaminar;
+
+    public terrestres(int temperatura, int humedad, boolean limpieza, boolean puedeCaminar) {
+        super(temperatura, humedad, limpieza);
+        this.puedeCaminar = puedeCaminar;
+        //TODO Auto-generated constructor stub
+    }
+
+    
+    public boolean isPuedeCaminar() {
+        return puedeCaminar;
+    }
+
+
+    public void setPuedeCaminar(boolean puedeCaminar) {
+        this.puedeCaminar = puedeCaminar;
     }
 
     public void agregarHabitat() {
