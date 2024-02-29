@@ -7,10 +7,13 @@ public class animal {
     String habitat;
     String comportamiento;
     String salud;
-    string id;
+    String id;
+    boolean esSaludable;
+    boolean seComporta;
+    boolean seAlimenta;
 
 
-    public animal(String especie, String nombre, String alimentacion, String habitat, String comportamiento, String salud, string id) {
+    public animal(String especie, String nombre, String alimentacion, String habitat, String comportamiento, String salud, String id, boolean esSaludable, boolean seComporta, boolean seAlimenta) {
         this.especie = especie;
         this.nombre = nombre;
         this.alimentacion = alimentacion;
@@ -18,9 +21,61 @@ public class animal {
         this.comportamiento = comportamiento;
         this.salud = salud;
         this.id = id;
+        this.esSaludable = esSaludable;
+        this.seComporta = seComporta;
+        this.seAlimenta = seAlimenta;
     }
 
-    //Desarrollar funciones para registrar la alimentación, salud y comportamiento de los animales, asegurando que se cumplan todas sus necesidades.
+    public void buenaSalud(esSaludable){
+        if(esSaludable){
+            System.out.println("es saludable");
+        }else{
+            System.out.println("no es saludable");
+        }
+    }
+
+    public void buenComportamiento(seComporta){
+        if(seComporta){
+            System.out.println("se comporta");
+        }else{
+            System.out.println("no se comporta");
+        }
+    }
+
+    public void buenaAlimentacion(seAlimenta){
+        if(seAlimenta){
+            System.out.println("se alimenta bien");
+        }else{
+            System.out.println("no se alimenta bien");
+        }
+    }
+
+    public void 
+
+
+    public boolean isEsSaludable() {
+        return esSaludable;
+    }
+
+    public void setEsSaludable(boolean esSaludable) {
+        this.esSaludable = esSaludable;
+    }
+
+    public boolean isSeComporta() {
+        return seComporta;
+    }
+
+    public void setSeComporta(boolean seComporta) {
+        this.seComporta = seComporta;
+    }
+
+    public boolean isSeAlimenta() {
+        return seAlimenta;
+    }
+
+    public void setSeAlimenta(boolean seAlimenta) {
+        this.seAlimenta = seAlimenta;
+    }
 
     public String getEspecie() {
         return especie;
@@ -69,6 +124,14 @@ public class animal {
     public void setSalud(String salud) {
         this.salud = salud;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String setId(){
+        this.id = id;
+    }
     
     @Override
     public String toString() {
@@ -87,4 +150,21 @@ public class animal {
         return super.equals(obj);
     }
     
+    //Desarrollar funciones para registrar los animales, asegurando que se cumplan todas sus necesidades.
+    public void alimentar(){
+        System.out.println("El animal ha sido alimentado");
+    }
+    public void salud(){
+        System.out.println("El animal ha sido revisado por el veterinario");
+    }   
+    public void comportamiento(){
+        System.out.println("El animal ha sido observado por el cuidador");
+    }
+    public void habitat(){
+        System.out.println("El animal ha sido ubicado en su habitat");
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
+
 }
